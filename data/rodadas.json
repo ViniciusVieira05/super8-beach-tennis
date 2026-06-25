@@ -1,0 +1,577 @@
+{
+    "meta": {
+        "format": "rotativas",
+        "current_round": 8,
+        "updated_at": "2026-06-25T22:15:02+02:00"
+    },
+    "duplas_fixas": [],
+    "rounds": [
+        {
+            "numero": 1,
+            "partidas": [
+                {
+                    "quadra": 1,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c82ed1eea",
+                            "nome": "Vinicius Vieira Romão",
+                            "apelido": "Vinissin",
+                            "lado": "Direita",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c84e0df09",
+                            "nome": "Pedro Lucas Vieira ROão",
+                            "apelido": "Pedrinho",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c8613e62f",
+                            "nome": "Marcos Vogado da Cunha",
+                            "apelido": "Marquinhos",
+                            "lado": "Esquerda",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8706c454",
+                            "nome": "Joao Pedro da Silva",
+                            "apelido": "Joaozinho",
+                            "lado": "Ambos",
+                            "categoria": "C"
+                        }
+                    ],
+                    "placar_a": 7,
+                    "placar_b": 8,
+                    "status": "finalizada"
+                },
+                {
+                    "quadra": 2,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c8817cb76",
+                            "nome": "Maria Aparecida Carvalho de Souza",
+                            "apelido": "MAriazinha",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        },
+                        {
+                            "id": "6a33c8955afe2",
+                            "nome": "Marta Brande Coelho",
+                            "apelido": "Martinha",
+                            "lado": "Ambos",
+                            "categoria": "A"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c8a70ec6f",
+                            "nome": "Marcos Aurelio de Souza",
+                            "apelido": "Marcão",
+                            "lado": "Esquerda",
+                            "categoria": "B"
+                        },
+                        {
+                            "id": "6a33c8ba1bcee",
+                            "nome": "Alisson De Araujo Vogado",
+                            "apelido": "Alisson",
+                            "lado": "Direita",
+                            "categoria": "B"
+                        }
+                    ],
+                    "placar_a": 5,
+                    "placar_b": 9,
+                    "status": "finalizada"
+                }
+            ]
+        },
+        {
+            "numero": 2,
+            "partidas": [
+                {
+                    "quadra": 1,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c82ed1eea",
+                            "nome": "Vinicius Vieira Romão",
+                            "apelido": "Vinissin",
+                            "lado": "Direita",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8613e62f",
+                            "nome": "Marcos Vogado da Cunha",
+                            "apelido": "Marquinhos",
+                            "lado": "Esquerda",
+                            "categoria": "A"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c8817cb76",
+                            "nome": "Maria Aparecida Carvalho de Souza",
+                            "apelido": "MAriazinha",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        },
+                        {
+                            "id": "6a33c8a70ec6f",
+                            "nome": "Marcos Aurelio de Souza",
+                            "apelido": "Marcão",
+                            "lado": "Esquerda",
+                            "categoria": "B"
+                        }
+                    ],
+                    "placar_a": 4,
+                    "placar_b": 5,
+                    "status": "finalizada"
+                },
+                {
+                    "quadra": 2,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c84e0df09",
+                            "nome": "Pedro Lucas Vieira ROão",
+                            "apelido": "Pedrinho",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        },
+                        {
+                            "id": "6a33c8706c454",
+                            "nome": "Joao Pedro da Silva",
+                            "apelido": "Joaozinho",
+                            "lado": "Ambos",
+                            "categoria": "C"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c8955afe2",
+                            "nome": "Marta Brande Coelho",
+                            "apelido": "Martinha",
+                            "lado": "Ambos",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8ba1bcee",
+                            "nome": "Alisson De Araujo Vogado",
+                            "apelido": "Alisson",
+                            "lado": "Direita",
+                            "categoria": "B"
+                        }
+                    ],
+                    "placar_a": 8,
+                    "placar_b": 0,
+                    "status": "finalizada"
+                }
+            ]
+        },
+        {
+            "numero": 3,
+            "partidas": [
+                {
+                    "quadra": 1,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c82ed1eea",
+                            "nome": "Vinicius Vieira Romão",
+                            "apelido": "Vinissin",
+                            "lado": "Direita",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8706c454",
+                            "nome": "Joao Pedro da Silva",
+                            "apelido": "Joaozinho",
+                            "lado": "Ambos",
+                            "categoria": "C"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c8955afe2",
+                            "nome": "Marta Brande Coelho",
+                            "apelido": "Martinha",
+                            "lado": "Ambos",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8a70ec6f",
+                            "nome": "Marcos Aurelio de Souza",
+                            "apelido": "Marcão",
+                            "lado": "Esquerda",
+                            "categoria": "B"
+                        }
+                    ],
+                    "placar_a": 8,
+                    "placar_b": 6,
+                    "status": "finalizada"
+                },
+                {
+                    "quadra": 2,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c84e0df09",
+                            "nome": "Pedro Lucas Vieira ROão",
+                            "apelido": "Pedrinho",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        },
+                        {
+                            "id": "6a33c8613e62f",
+                            "nome": "Marcos Vogado da Cunha",
+                            "apelido": "Marquinhos",
+                            "lado": "Esquerda",
+                            "categoria": "A"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c8817cb76",
+                            "nome": "Maria Aparecida Carvalho de Souza",
+                            "apelido": "MAriazinha",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        },
+                        {
+                            "id": "6a33c8ba1bcee",
+                            "nome": "Alisson De Araujo Vogado",
+                            "apelido": "Alisson",
+                            "lado": "Direita",
+                            "categoria": "B"
+                        }
+                    ],
+                    "placar_a": 5,
+                    "placar_b": 3,
+                    "status": "finalizada"
+                }
+            ]
+        },
+        {
+            "numero": 4,
+            "partidas": [
+                {
+                    "quadra": 1,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c82ed1eea",
+                            "nome": "Vinicius Vieira Romão",
+                            "apelido": "Vinissin",
+                            "lado": "Direita",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8817cb76",
+                            "nome": "Maria Aparecida Carvalho de Souza",
+                            "apelido": "MAriazinha",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c84e0df09",
+                            "nome": "Pedro Lucas Vieira ROão",
+                            "apelido": "Pedrinho",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        },
+                        {
+                            "id": "6a33c8955afe2",
+                            "nome": "Marta Brande Coelho",
+                            "apelido": "Martinha",
+                            "lado": "Ambos",
+                            "categoria": "A"
+                        }
+                    ],
+                    "placar_a": 4,
+                    "placar_b": 6,
+                    "status": "finalizada"
+                },
+                {
+                    "quadra": 2,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c8613e62f",
+                            "nome": "Marcos Vogado da Cunha",
+                            "apelido": "Marquinhos",
+                            "lado": "Esquerda",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8a70ec6f",
+                            "nome": "Marcos Aurelio de Souza",
+                            "apelido": "Marcão",
+                            "lado": "Esquerda",
+                            "categoria": "B"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c8706c454",
+                            "nome": "Joao Pedro da Silva",
+                            "apelido": "Joaozinho",
+                            "lado": "Ambos",
+                            "categoria": "C"
+                        },
+                        {
+                            "id": "6a33c8ba1bcee",
+                            "nome": "Alisson De Araujo Vogado",
+                            "apelido": "Alisson",
+                            "lado": "Direita",
+                            "categoria": "B"
+                        }
+                    ],
+                    "placar_a": 2,
+                    "placar_b": 3,
+                    "status": "finalizada"
+                }
+            ]
+        },
+        {
+            "numero": 5,
+            "partidas": [
+                {
+                    "quadra": 1,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c82ed1eea",
+                            "nome": "Vinicius Vieira Romão",
+                            "apelido": "Vinissin",
+                            "lado": "Direita",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8955afe2",
+                            "nome": "Marta Brande Coelho",
+                            "apelido": "Martinha",
+                            "lado": "Ambos",
+                            "categoria": "A"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c8613e62f",
+                            "nome": "Marcos Vogado da Cunha",
+                            "apelido": "Marquinhos",
+                            "lado": "Esquerda",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8ba1bcee",
+                            "nome": "Alisson De Araujo Vogado",
+                            "apelido": "Alisson",
+                            "lado": "Direita",
+                            "categoria": "B"
+                        }
+                    ],
+                    "placar_a": 7,
+                    "placar_b": 3,
+                    "status": "finalizada"
+                },
+                {
+                    "quadra": 2,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c84e0df09",
+                            "nome": "Pedro Lucas Vieira ROão",
+                            "apelido": "Pedrinho",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        },
+                        {
+                            "id": "6a33c8817cb76",
+                            "nome": "Maria Aparecida Carvalho de Souza",
+                            "apelido": "MAriazinha",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c8706c454",
+                            "nome": "Joao Pedro da Silva",
+                            "apelido": "Joaozinho",
+                            "lado": "Ambos",
+                            "categoria": "C"
+                        },
+                        {
+                            "id": "6a33c8a70ec6f",
+                            "nome": "Marcos Aurelio de Souza",
+                            "apelido": "Marcão",
+                            "lado": "Esquerda",
+                            "categoria": "B"
+                        }
+                    ],
+                    "placar_a": 4,
+                    "placar_b": 32,
+                    "status": "finalizada"
+                }
+            ]
+        },
+        {
+            "numero": 6,
+            "partidas": [
+                {
+                    "quadra": 1,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c82ed1eea",
+                            "nome": "Vinicius Vieira Romão",
+                            "apelido": "Vinissin",
+                            "lado": "Direita",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8a70ec6f",
+                            "nome": "Marcos Aurelio de Souza",
+                            "apelido": "Marcão",
+                            "lado": "Esquerda",
+                            "categoria": "B"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c8706c454",
+                            "nome": "Joao Pedro da Silva",
+                            "apelido": "Joaozinho",
+                            "lado": "Ambos",
+                            "categoria": "C"
+                        },
+                        {
+                            "id": "6a33c8955afe2",
+                            "nome": "Marta Brande Coelho",
+                            "apelido": "Martinha",
+                            "lado": "Ambos",
+                            "categoria": "A"
+                        }
+                    ],
+                    "placar_a": 8,
+                    "placar_b": 3,
+                    "status": "finalizada"
+                },
+                {
+                    "quadra": 2,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c84e0df09",
+                            "nome": "Pedro Lucas Vieira ROão",
+                            "apelido": "Pedrinho",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        },
+                        {
+                            "id": "6a33c8ba1bcee",
+                            "nome": "Alisson De Araujo Vogado",
+                            "apelido": "Alisson",
+                            "lado": "Direita",
+                            "categoria": "B"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c8613e62f",
+                            "nome": "Marcos Vogado da Cunha",
+                            "apelido": "Marquinhos",
+                            "lado": "Esquerda",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8817cb76",
+                            "nome": "Maria Aparecida Carvalho de Souza",
+                            "apelido": "MAriazinha",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        }
+                    ],
+                    "placar_a": 6,
+                    "placar_b": 3,
+                    "status": "finalizada"
+                }
+            ]
+        },
+        {
+            "numero": 7,
+            "partidas": [
+                {
+                    "quadra": 1,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c82ed1eea",
+                            "nome": "Vinicius Vieira Romão",
+                            "apelido": "Vinissin",
+                            "lado": "Direita",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8ba1bcee",
+                            "nome": "Alisson De Araujo Vogado",
+                            "apelido": "Alisson",
+                            "lado": "Direita",
+                            "categoria": "B"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c84e0df09",
+                            "nome": "Pedro Lucas Vieira ROão",
+                            "apelido": "Pedrinho",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        },
+                        {
+                            "id": "6a33c8a70ec6f",
+                            "nome": "Marcos Aurelio de Souza",
+                            "apelido": "Marcão",
+                            "lado": "Esquerda",
+                            "categoria": "B"
+                        }
+                    ],
+                    "placar_a": 4,
+                    "placar_b": 9,
+                    "status": "finalizada"
+                },
+                {
+                    "quadra": 2,
+                    "dupla_a": [
+                        {
+                            "id": "6a33c8613e62f",
+                            "nome": "Marcos Vogado da Cunha",
+                            "apelido": "Marquinhos",
+                            "lado": "Esquerda",
+                            "categoria": "A"
+                        },
+                        {
+                            "id": "6a33c8955afe2",
+                            "nome": "Marta Brande Coelho",
+                            "apelido": "Martinha",
+                            "lado": "Ambos",
+                            "categoria": "A"
+                        }
+                    ],
+                    "dupla_b": [
+                        {
+                            "id": "6a33c8706c454",
+                            "nome": "Joao Pedro da Silva",
+                            "apelido": "Joaozinho",
+                            "lado": "Ambos",
+                            "categoria": "C"
+                        },
+                        {
+                            "id": "6a33c8817cb76",
+                            "nome": "Maria Aparecida Carvalho de Souza",
+                            "apelido": "MAriazinha",
+                            "lado": "Ambos",
+                            "categoria": "B"
+                        }
+                    ],
+                    "placar_a": 5,
+                    "placar_b": 3,
+                    "status": "finalizada"
+                }
+            ]
+        }
+    ]
+}
