@@ -4,11 +4,17 @@ require_once __DIR__ . '/../utils/json_helper.php';
 $dadosRodadas = ler_rodadas();
 $rodadas = $dadosRodadas['rounds'] ?? [];
 $rodadaAtualNum = (int)($dadosRodadas['meta']['current_round'] ?? 1);
-$totalRodadas = count($rodadas);
+$totalRodadas = count($rodadas); 
+
+if (isset($_GET['rodada_ver'])) {
+    $rodadaExibirNum = (int)$_GET['rodada_ver']; 
+} else {
+    $rodadaExibirNum = $rodadaAtualNum <= $totalRodadas ? $rodadaAtualNum : $totalRodadas;
+}
 
 $rodadaExibir = null;
 foreach ($rodadas as $r) {
-    if ((int)$r['numero'] === $rodadaAtualNum) {
+    if ((int)$r['numero'] === $rodadaExibirNum) {
         $rodadaExibir = $r;
         break;
     }
@@ -45,6 +51,19 @@ function valor_escapado($texto) {
         <header style="margin-bottom: 20px;">
             <h2>Painel de Rodadas</h2>
             <p>Gerenciamento e lançamento de placares do Super 8.</p>
+
+            <?php if ($totalRodadas > 0): ?>
+                <div style="margin-top: 15px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+                    <span style="font-weight: bold; color: #4b5563; font-size: 14px;">Visualizar / Editar:</span>
+                    <?php for ($i = 1; $i <= $totalRodadas; $i++): ?>
+                        <a href="rodadas.php?rodada_ver=<?= $i ?>" 
+                           style="padding: 6px 12px; border-radius: 6px; border: 1px solid #cbd5e1; text-decoration: none; font-weight: bold; font-size: 14px; 
+                                  background: <?= $rodadaExibirNum === $i ? '#2563eb; color: white; border-color: #2563eb;' : 'white; color: #334155;' ?>;">
+                            R<?= $i ?>
+                        </a>
+                    <?php endfor; ?>
+                </div>
+            <?php endif; ?>
         </header>
 
         <?php if (isset($_GET['erro']) && $_GET['erro'] === 'empate'): ?>
@@ -56,12 +75,16 @@ function valor_escapado($texto) {
         <?php if (!$rodadaExibir || $totalRodadas === 0): ?>
             <section class="card" style="background: #ecfdf5; padding: 20px; border-radius: 8px; border: 1px solid #a7f3d0; text-align: center;">
                 <h2 style="color: #065f46; margin-top: 0;">Torneio Encerrado!</h2>
-                <p style="color: #047857; margin-bottom: 0;">Todas as rodadas foram finalizadas com sucesso e os resultados estão consolidados.</p>
+                <p style="color: #047857; margin-bottom: 20px;">Todas as rodadas foram finalizadas com sucesso e os resultados estão consolidados.</p>
+                <p style="color: #475569; font-size: 14px;">Utilize os botões acima (R1, R2...) se precisar corrigir algum placar.</p>
             </section>
         <?php else: ?>
             <section class="card" style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e5e7eb;">
                 <h2 style="margin-top: 0; border-bottom: 2px solid #f3f4f6; padding-bottom: 10px;">
                     Rodada <?= $rodadaExibir['numero'] ?> de <?= $totalRodadas ?>
+                    <?php if ($rodadaExibir['numero'] < $rodadaAtualNum): ?>
+                        <span style="font-size: 14px; color: #ef4444; font-weight: normal; margin-left: 10px;">(Modo Edição)</span>
+                    <?php endif; ?>
                 </h2>
                 
                 <form action="salvar_placar.php" method="post" onsubmit="return validarFormularioEmpate(this);">
@@ -105,7 +128,7 @@ function valor_escapado($texto) {
                     <?php endforeach; ?>
 
                     <button type="submit" class="btn" style="background: #2563eb; color: white; border: none; padding: 12px 24px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 15px; width: 100%;">
-                        Salvar Placares e Avançar
+                        <?= $rodadaExibir['numero'] < $rodadaAtualNum ? 'Atualizar Placares Desta Rodada' : 'Salvar Placares e Avançar' ?>
                     </button>
                 </form>
             </section>
@@ -115,20 +138,17 @@ function valor_escapado($texto) {
     <script>
     function validarFormularioEmpate(form) {
         const linhasPartida = form.querySelectorAll('.partida-row');
-        
         for (let i = 0; i < linhasPartida.length; i++) {
             const placarA = parseInt(linhasPartida[i].querySelector('.placar-a').value) || 0;
             const placarB = parseInt(linhasPartida[i].querySelector('.placar-b').value) || 0;
-            
             if (placarA === placarB) {
-                alert(" Atenção: No Beach Tennis não existe empate! Uma das partidas da rodada está com o placar igual. Ajuste os números para prosseguir.");
+                alert("⚠️ Atenção: No Beach Tennis não existe empate! Uma das partidas da rodada está com o placar igual. Ajuste os números para prosseguir.");
                 return false;
             }
         }
         return true;
     }
     </script>
-
     <script src="../js/ui.js"></script>
 </body>
 </html>

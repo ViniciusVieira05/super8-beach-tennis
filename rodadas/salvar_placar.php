@@ -40,7 +40,7 @@ if ($numRodada === (int)($dadosRodadas['meta']['current_round'] ?? 1)) {
     if ($numRodada < $totalRodadas) {
         $dadosRodadas['meta']['current_round'] = $numRodada + 1;
     } else {
-        $dadosRodadas['meta']['current_round'] = $totalRodadas + 1;
+        $dadosRodadas['meta']['current_round'] = $totalRodadas + 1; // Fim do torneio
     }
 }
 
