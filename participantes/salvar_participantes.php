@@ -1,6 +1,32 @@
 <?php
 require_once __DIR__ . '/../utils/json_helper.php';
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['acao']) && $_POST['acao'] === 'excluir_todos') {
+    $caminhos = caminhos_json();
+
+    $estruturaParticipantes = [
+        'participantes' => []
+    ];
+
+    $estruturaRodadas = [
+        'meta' => [
+            'format' => 'rotativas',
+            'current_round' => 1,
+            'updated_at' => date('c')
+        ],
+        'rounds' => []
+    ];
+
+    $sucessoParticipantes = gravar_json($caminhos['participantes'], $estruturaParticipantes);
+    $sucessoRodadas = gravar_json($caminhos['rodadas'], $estruturaRodadas);
+
+    if ($sucessoParticipantes && $sucessoRodadas) {
+        header('Location: cadastro.php?sucesso=reset');
+    } else {
+        header('Location: cadastro.php?erro=reset');
+    }
+    exit;
+}
 $nome    = trim($_POST['nome'] ?? '');
 $apelido = trim($_POST['apelido'] ?? '');
 

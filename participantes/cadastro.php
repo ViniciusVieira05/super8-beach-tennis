@@ -30,6 +30,18 @@ $limiteAtingido = ($totalJogadores >= 8);
 
     <main class="container" style="margin-top: 20px;">
         
+        <?php if (isset($_GET['sucesso']) && $_GET['sucesso'] === 'reset'): ?>
+            <div style="background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; padding: 12px; border-radius: 6px; margin-bottom: 20px; font-weight: bold;">
+                ✅ O torneio foi resetado com sucesso! Todos os dados foram limpos.
+            </div>
+        <?php endif; ?>
+
+        <?php if (isset($_GET['erro']) && $_GET['erro'] === 'reset'): ?>
+            <div style="background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; padding: 12px; border-radius: 6px; margin-bottom: 20px; font-weight: bold;">
+                ❌ Ocorreu um erro ao tentar resetar os arquivos do sistema. Verifique as permissões de escrita.
+            </div>
+        <?php endif; ?>
+
         <div style="background: #f3f4f6; padding: 15px; border-radius: 8px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;">
             <div>
                 <h3 style="margin: 0;">Status das Inscrições</h3>
@@ -102,6 +114,19 @@ $limiteAtingido = ($totalJogadores >= 8);
 
         </div>
     </main>
+
+<?php if (!empty($participantes)): ?>
+    <div style="margin-top: 25px; text-align: right;">
+        <form action="salvar_participantes.php" method="POST" onsubmit="return confirmarExclusaoGeral();" style="display: inline-block;">
+            
+            <input type="hidden" name="acao" value="excluir_todos">
+            
+            <button type="submit" style="background: #dc2626; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 14px; display: inline-flex; align-items: center; gap: 6px;">
+                🗑️ Excluir Todos e Resetar Torneio
+            </button>
+        </form>
+    </div>
+<?php endif; ?>
 
     <script src="../js/ui.js"></script>
 </body>
